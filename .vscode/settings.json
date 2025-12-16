@@ -6,7 +6,8 @@
           "../warhammer_3/tw_autogen/frontend/",
           "../warhammer_3/tw_autogen/battle/",
           "${addons}/lldebugger/module/library",
-          "${addons}/luafilesystem/module/library"
+          "${addons}/luafilesystem/module/library",
+          "${3rd}/lfs/library"
      ],
      "Lua.diagnostics.libraryFiles": "Disable",
      "Lua.diagnostics.ignoredFiles": "Disable",

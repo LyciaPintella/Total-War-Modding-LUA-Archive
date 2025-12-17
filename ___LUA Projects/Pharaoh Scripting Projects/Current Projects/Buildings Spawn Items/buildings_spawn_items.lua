@@ -132,7 +132,7 @@ Translators Quarters - (phar_main_all_province_management_main_building_poc_happ
 Wisdom Codecs: Field Advisor (phar_main_common_general_16), Wise Nobleman (phar_main_rare_18) Soothsayer (phar_main_rare_8).
      * Variant: phar_main_all_province_management_main_building_poc_legitimacy_influence_boost_3
 
-& Woodcutter's District / Lumber Mill Complex: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
+! Woodcutter's District / Lumber Mill Complex: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
      * Variants: phar_main_all_resource_production_wood_canaan_type_a_derivative_1, phar_main_all_resource_production_wood_hatti_derivative_2
 
 ! Cedar Warehouse: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.

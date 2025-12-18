@@ -8,7 +8,6 @@
 
      * Variant: phar_main_all_resource_production_bronze_mine_derivative_type_a_2
 
-
 ! Cedar Warehouse - Small and medium sheilds, and common chariots.
 
      * Variant: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1

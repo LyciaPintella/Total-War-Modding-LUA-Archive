@@ -18,6 +18,11 @@
 			"**/desktop.ini": true,
 			"**/README.md": false,
 			"../warhammer_3/": true
-		}	
+		},
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#432803",
+			"titleBar.activeBackground": "#5E3804",
+			"titleBar.activeForeground": "#FEF9F3"
+		}
      },
 }

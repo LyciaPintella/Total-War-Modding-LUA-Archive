@@ -1,3 +1,4 @@
+---@diagnostic disable: need-check-nil
 --This file refers to the "Local deities" mechanic in Pharaoh, but below they will be called just "deities"
 out("Loading phar_local_deities.lua")
 

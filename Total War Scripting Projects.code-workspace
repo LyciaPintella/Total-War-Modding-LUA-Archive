@@ -1,10 +1,26 @@
 {
-     "folders": [
-          {
-               "path": "."
-          }
-     ],
-     "settings": {
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[lua]": {
+			"editor.quickSuggestions": {
+				"other": true,
+				"comments": true,
+				"strings": true,
+			},
+			"editor.quickSuggestionsDelay": 1,
+			"editor.snippetSuggestions": "inline",
+			"editor.tabCompletion": "on",
+			"files.eol": "\n",
+			"files.encoding": "utf8", //Changed from true
+			"editor.suggest.snippetsPreventQuickSuggestions": false,
+			"editor.tabSize": 5,
+			"editor.detectIndentation": false,
+			"editor.defaultFormatter": "Koihik.vscode-lua-format"
+		},
 		"Lua.workspace.library": [
 			"../Total War LUA Autogen/battle/",
 			"../Total War LUA Autogen/campaign/",
@@ -17,12 +33,8 @@
 			"**/.git*": true,
 			"**/desktop.ini": true,
 			"**/README.md": false,
-			"../warhammer_3/": true
-		},
-		"workbench.colorCustomizations": {
-			"activityBar.background": "#432803",
-			"titleBar.activeBackground": "#5E3804",
-			"titleBar.activeForeground": "#FEF9F3"
+			"../Total War Modding LUA Archive/": true,
+			"../Code Library/": true
 		}
-     },
+	}
 }

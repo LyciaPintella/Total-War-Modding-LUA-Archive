@@ -11,6 +11,7 @@
 		"**/.git*": true,
 		"**/desktop.ini": true,
 		"**/README.md": false,
-		"../warhammer_3/": true
+		"../Total War Modding LUA Archive/": true,
+		"../Code Library/": true
 	}
 }

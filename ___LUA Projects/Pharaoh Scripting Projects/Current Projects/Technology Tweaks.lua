@@ -1,3 +1,4 @@
+---@diagnostic disable: duplicate-set-field
 out("Loading phar_scripted_bonus_values.lua")
 
 scripted_bonus_values = {

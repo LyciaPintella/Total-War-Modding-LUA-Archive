@@ -100,6 +100,7 @@ function scripted_bonus_values.restore_action_points(character, bonus_value)
           action_points = action_points / 100 --converting to decimal as we're using percentages for this method
 
           if action_points > 0 then
+---@diagnostic disable-next-line: redundant-parameter
                cm:replenish_action_points(cm:char_lookup_str(character:command_queue_index()), 0, action_points)
           end
      end

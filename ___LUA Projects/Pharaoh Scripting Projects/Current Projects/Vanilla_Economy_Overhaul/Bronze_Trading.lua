@@ -183,7 +183,7 @@ function replenish_deposits(route, phase, civ_index)
 
      for i = 1, #region_key_list do
           local this_key = region_key_list[i]
-          local region_int = cm:get_region(this_key)
+          local region_int = cm:get_region_by_key(this_key)
           out("TP_bronze: Checking region " .. this_key)
 
           if not region_int:is_null_interface() and not region_int:is_abandoned() then

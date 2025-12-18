@@ -130,7 +130,7 @@ invasions_waves_default_settings =
           wave_unit_count = 8,
           wave_unit_count_variance = 1,
 
-          wave_spawn_at_turn = 30,
+          wave_spawn_at_turn = 35,
           wave_spawn_at_turn_variance = 5,
 
           wave_army_count = 2,
@@ -175,7 +175,7 @@ invasions_waves_default_settings =
           wave_unit_count = 17,
           wave_unit_count_variance = 2,
 
-          wave_spawn_at_turn = 110,
+          wave_spawn_at_turn = 115,
           wave_spawn_at_turn_variance = 5,
 
           wave_army_count = 2,
@@ -235,7 +235,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -251,7 +251,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -267,7 +267,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 90,
+                    wave_spawn_at_turn = 85,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 14,
@@ -283,7 +283,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 105,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -308,7 +308,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -324,7 +324,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -356,7 +356,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -381,7 +381,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -397,7 +397,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -429,7 +429,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -454,7 +454,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -502,7 +502,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -531,7 +531,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -547,7 +547,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -579,7 +579,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -604,7 +604,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -620,7 +620,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -652,7 +652,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -681,7 +681,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -697,7 +697,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -729,7 +729,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -758,7 +758,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -774,7 +774,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -806,7 +806,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -831,7 +831,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -847,7 +847,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -879,7 +879,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -904,7 +904,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -920,7 +920,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -952,7 +952,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -981,7 +981,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -997,7 +997,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -1029,7 +1029,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -1054,7 +1054,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -1070,7 +1070,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -1102,7 +1102,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -1127,7 +1127,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 1,
 
-                    wave_spawn_at_turn = 30,
+                    wave_spawn_at_turn = 35,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 5,
@@ -1143,7 +1143,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 60,
+                    wave_spawn_at_turn = 65,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 9,
@@ -1175,7 +1175,7 @@ invasions_factions =
                     wave_unit_count = 20,
                     wave_unit_count_variance = 2,
 
-                    wave_spawn_at_turn = 110,
+                    wave_spawn_at_turn = 115,
                     wave_spawn_at_turn_variance = 5,
 
                     wave_army_count = 20,
@@ -1238,8 +1238,7 @@ sea_invasion = {
           end
 
           sea_invasion.persistent = cm:load_named_value("sea_invasion", sea_invasion.persistent, context)
-          sea_invasion.persistent.has_first_invasion_spawned = sea_invasion.persistent.has_first_invasion_spawned or
-              false
+          sea_invasion.persistent.has_first_invasion_spawned = sea_invasion.persistent.has_first_invasion_spawned or false
           sea_invasion.persistent.has_last_invasion_spawned = sea_invasion.persistent.has_last_invasion_spawned or false
           sea_invasion.persistent.invasion_instance = sea_invasion.persistent.invasion_instance or {}
 

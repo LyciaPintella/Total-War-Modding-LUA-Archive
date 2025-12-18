@@ -11,7 +11,13 @@
 			"../warhammer_3/tw_autogen/frontend/",
 			"../warhammer_3/tw_autogen/global/",
 			"${3rd}/lfs/library"
-		]
-
+		],
+		"files.exclude": {
+			"**/.git": false,
+			"**/.git*": true,
+			"**/desktop.ini": true,
+			"**/README.md": false,
+			"../warhammer_3/": true
+		}	
      },
 }

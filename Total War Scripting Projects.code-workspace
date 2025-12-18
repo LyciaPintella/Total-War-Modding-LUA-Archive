@@ -11,12 +11,7 @@
 			"../warhammer_3/tw_autogen/frontend/",
 			"../warhammer_3/tw_autogen/global/",
 			"${3rd}/lfs/library"
-		],
-		"workbench.colorCustomizations": {
-               "activityBar.background": "#432803",
-               "titleBar.activeBackground": "#5E3804",
-               "titleBar.activeForeground": "#FEF9F3"
-          }
+		]
 
      },
 }

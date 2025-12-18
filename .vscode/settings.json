@@ -1,9 +1,9 @@
 {
 	"Lua.workspace.library": [
-		"../warhammer_3/tw_autogen/battle/",
-		"../warhammer_3/tw_autogen/campaign/",
-		"../warhammer_3/tw_autogen/frontend/",
-		"../warhammer_3/tw_autogen/global/",
+		"../Total War LUA Autogen/battle/",
+		"../Total War LUA Autogen/campaign/",
+		"../Total War LUA Autogen/frontend/",
+		"../Total War LUA Autogen/global/",
 		"${3rd}/lfs/library"
 	],
 	"files.exclude": {

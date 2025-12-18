@@ -29,5 +29,7 @@
 		"**/.git*": true,
 		"**/desktop.ini": true,
 		"**/README.md": false,
+		"**/*sync.ffs_db": true,
+		"**/*-Jessica-PC*/**": true
 	}
 }

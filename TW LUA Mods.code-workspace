@@ -1,6 +1,7 @@
 {
 	"folders": [
 		{
+			"name": "LUA Mods",
 			"path": "."
 		}
 	],
@@ -28,12 +29,6 @@
 			"../Total War LUA Autogen/global/",
 			"${3rd}/lfs/library"
 		],
-		"files.exclude": {
-			"**/.git": false,
-			"**/.git*": true,
-			"**/desktop.ini": true,
-			"**/README.md": false,
-		},
 		"Lua.workspace.ignoreDir": [
 			".vscode",
 			"docgen.lua",
@@ -52,6 +47,14 @@
 			"**/*[Ee]xample*/**",
 			"**/*Vanilla*/**"
 		],
+		"files.exclude": {
+			"**/.git": false,
+			"**/.git*": true,
+			"**/desktop.ini": true,
+			"**/README.md": false,
+			"**/*sync.ffs_db": true,
+			"**/*-Jessica-PC*/**": true
+		},
 		"workbench.colorCustomizations": {
 			"activityBar.background": "#432803",
 			"titleBar.activeBackground": "#5E3804",

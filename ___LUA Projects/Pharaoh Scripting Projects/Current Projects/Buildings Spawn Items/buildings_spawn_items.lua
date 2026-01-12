@@ -2,8 +2,6 @@
      ? This is a guide for what buildings make what items. I've kept the db tag for the buildings
      ? and items, and included their plain English names so you can know what items to expect.
      
-     TEST TEST TESTd ddd ddd ddd 
-
 ! Bronze Proving Hall: phar_main_common_equipment_axe, phar_main_common_equipment_club, phar_main_common_equipment_spear, phar_main_common_equipment_khopesh, phar_main_common_equipment_sword
 
      * Variant: phar_main_all_resource_production_bronze_mine_derivative_type_a_2

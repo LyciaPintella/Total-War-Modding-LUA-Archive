@@ -10,7 +10,7 @@
 
      * Variant: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1
 
-Champion's Hall: phar_main_common_general_11 (sucks!), phar_main_rare_15 (Duellist: +5% Ambush Defence Channce, XP for sword and khopesh units),  phar_main_rare_16 (Blind Veteran: +20% Ambush defence chance, XP for spear units), phar_main_rare_17.
+Champion's Hall: phar_main_common_general_11 (sucks!), phar_main_rare_15 (Duellist: +5% Ambush Defence Channce, XP for sword and khopesh units),  phar_main_rare_16 (Blind Veteran: +20% Ambush defence chance, XP for spear units), phar_main_rare_17 (Strongman - +2 Public Order, XP for axe and club units).
 
           * Variants listed below:
      ? phar_main_amenmesse_military_administration_unit_training_type_b_1

@@ -1976,13 +1976,13 @@ core:add_listener(
 
           if cm:char_is_general_with_army(character) and character:has_region() and is_in_settlement then
                if not character:turns_in_own_regions() < 5 and character:military_force():active_stance() ~= "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MUSTER" then
-                    if public_order >= 75 and faction_name == character:faction():name() then
+                    if public_order >= 60 and faction_name == character:faction():name() then
                          hcp_main_give_trait(character, "phar_main_trait_content", 20, 2)
                          hcp_main_give_trait(character, "hcp_trait_bad_disciplinarian", 20, 2)
                          out("hcp_character_is_garrisoned_in_settlement_with_high_public_order!")
                     elseif public_order <= -75 and faction_name == character:faction():name() then
-                         hcp_main_give_trait(character, "hcp_trait_disciplinarian", 20, 15)
-                         hcp_main_give_trait(character, "hcp_trait_admin_bad", 20, 15)
+                         hcp_main_give_trait(character, "hcp_trait_disciplinarian", 20, 10)
+                         hcp_main_give_trait(character, "hcp_trait_admin_bad", 20, 5)
                          out("hcp_character_is_garrisoned_in_settlement_with_low_public_order!")
                     end
                end
@@ -2051,7 +2051,7 @@ core:add_listener(
 
                     -- Character is in a friendly region but not in a settlement; he still gets scout.
                else
-                    hcp_main_give_trait(character, "hcp_trait_scout", 20, 5)
+                    hcp_main_give_trait(character, "hcp_trait_scout", 20, 10)
                     out("HCP: Character in friendly region, applying 'scout' trait.")
                end
 
@@ -2212,7 +2212,7 @@ core:add_listener(
                     hcp_main_give_trait(character, "phar_main_trait_underhanded", 20, 20);
                     -- FORCED MARCH
                elseif stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MARCH" then
-                    hcp_main_give_trait(character, "phar_main_trait_ambitious", 20, 15);
+                    hcp_main_give_trait(character, "phar_main_trait_ambitious", 20, 10);
                     -- ENCAMP
                elseif stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_SET_CAMP" then
                     hcp_main_give_trait(character, "phar_main_trait_content", 20, 30);

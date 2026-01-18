@@ -1891,11 +1891,11 @@ core:add_listener(
 
                --low influence check
                if region_influence < influence_threshold then
-                    hcp_main_give_trait(character, "phar_main_trait_respectful", 20, 3)
+                    hcp_main_give_trait(character, "phar_main_trait_respectful", 20, 5)
                     out("HCP_CHAR_IN_LOW_INFLUENCE_REGION!")
                     --high influence check
                elseif region_influence > influence_threshold then
-                    hcp_main_give_trait(character, "phar_main_trait_irreverent", 20, 1)
+                    hcp_main_give_trait(character, "phar_main_trait_irreverent", 20, 3)
                     out("HCP_CHAR_IN_HIGH_INFLUENCE_REGION!")
                end
           end
@@ -1977,8 +1977,8 @@ core:add_listener(
           if cm:char_is_general_with_army(character) and character:has_region() and is_in_settlement then
                if not character:turns_in_own_regions() < 5 and character:military_force():active_stance() ~= "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MUSTER" then
                     if public_order >= 60 and faction_name == character:faction():name() then
-                         hcp_main_give_trait(character, "phar_main_trait_content", 20, 2)
-                         hcp_main_give_trait(character, "hcp_trait_bad_disciplinarian", 20, 2)
+                         hcp_main_give_trait(character, "phar_main_trait_content", 20, 5)
+                         hcp_main_give_trait(character, "hcp_trait_bad_disciplinarian", 20, 3)
                          out("hcp_character_is_garrisoned_in_settlement_with_high_public_order!")
                     elseif public_order <= -75 and faction_name == character:faction():name() then
                          hcp_main_give_trait(character, "hcp_trait_disciplinarian", 20, 10)
@@ -2038,9 +2038,9 @@ core:add_listener(
                 ]] --
                     -- Check if the character is in an enemy region and apply scout, confident and pragmatic
                elseif faction:name() ~= region:owning_faction():name() then
-                    hcp_main_give_trait(character, "phar_main_trait_confident", 20, 5)
-                    hcp_main_give_trait(character, "hcp_trait_scout", 20, 5)
-                    hcp_main_give_trait(character, "hcp_trait_pragmatic", 20, 5)
+                    hcp_main_give_trait(character, "phar_main_trait_confident", 20, 10)
+                    hcp_main_give_trait(character, "hcp_trait_scout", 20, 10)
+                    hcp_main_give_trait(character, "hcp_trait_pragmatic", 20, 10)
                     out("HCP: Character in enemy region, applying 'confident' and 'scout' traits.")
 
                     -- Additional check for marriage and action points and applies cuckold.
@@ -2060,7 +2060,7 @@ core:add_listener(
                ------------------------------------------
                ---handles feck and bad_disciplinarian
                if not character:in_settlement() and cm:char_is_general_with_army(character) and character:military_force():active_stance() ~= "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MUSTER" then
-                    hcp_main_give_trait(character, "hcp_trait_feck", 20, 5)
+                    hcp_main_give_trait(character, "hcp_trait_feck", 20, 10)
                     --hcp_main_give_trait(character, "hcp_trait_bad_disciplinarian", 20, 1)
                     out(
                          "HCP: Character not in settlement with full action points, applying 'feck' and 'bad_disciplinarian' traits.")
@@ -2206,10 +2206,10 @@ core:add_listener(
 
                -- RAIDING
                if stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_LAND_RAID" then
-                    hcp_main_give_trait(character, "phar_main_trait_blunt", 20, 20);
+                    hcp_main_give_trait(character, "phar_main_trait_blunt", 20, 25);
                     -- AMBUSHING
                elseif stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_AMBUSH" then
-                    hcp_main_give_trait(character, "phar_main_trait_underhanded", 20, 20);
+                    hcp_main_give_trait(character, "phar_main_trait_underhanded", 20, 25);
                     -- FORCED MARCH
                elseif stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MARCH" then
                     hcp_main_give_trait(character, "phar_main_trait_ambitious", 20, 10);
@@ -2218,8 +2218,8 @@ core:add_listener(
                     hcp_main_give_trait(character, "phar_main_trait_content", 20, 30);
                     -- RECRUITING
                elseif stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MUSTER" then
-                    hcp_main_give_trait(character, "hcp_trait_charismatic", 20, 10);
-                    hcp_main_give_trait(character, "hcp_trait_military_admin_good", 20, 5);
+                    hcp_main_give_trait(character, "hcp_trait_charismatic", 20, 12.5);
+                    hcp_main_give_trait(character, "hcp_trait_military_admin_good", 20, 12.5);
                end
           end
 
@@ -2285,7 +2285,7 @@ core:add_listener(
                     if not building:is_null_interface() then
                          local superchain = building:superchain()
                          if superchain == "phar_main_port_coast_derivative_type_a" or superchain == "phar_main_irsu_resource_production_port_coast_derivative_type_a" then
-                              hcp_main_give_trait(character, "hcp_trait_criminal", 20, 4)
+                              hcp_main_give_trait(character, "hcp_trait_criminal", 20, 7.5)
                               out("HCP_SMUGGLERS' DEN found!")
                               break
                          end
@@ -2310,7 +2310,7 @@ core:add_listener(
                     if building_list:item_at(i):is_null_interface() == false then
                          local military_admin_superchain = building_list:item_at(i):superchain()
                          if MILITARY_ADMIN_BUILDINGS_SET[military_admin_superchain] then
-                              hcp_main_give_trait(character, "hcp_trait_military_admin_good", 20, 5)
+                              hcp_main_give_trait(character, "hcp_trait_military_admin_good", 20, 7.5)
                               out("HCP_CHARACTER_" ..
                                    character:onscreen_name() ..
                                    " FOUND MILITARY ADMIN BUILDING: " .. military_admin_superchain)
@@ -2337,7 +2337,7 @@ core:add_listener(
                     if building_list:item_at(i):is_null_interface() == false then
                          local management_superchain = building_list:item_at(i):superchain()
                          if MANAGEMENT_BUILDING_SUPERCHAINS_SET[management_superchain] then
-                              hcp_main_give_trait(character, "hcp_trait_admin_good", 20, 5)
+                              hcp_main_give_trait(character, "hcp_trait_admin_good", 20, 7.5)
                               out("HCP_CHARACTER_" ..
                                    character:onscreen_name() .. " FOUND MANAGEMENT BUILDING: " .. management_superchain)
                          end

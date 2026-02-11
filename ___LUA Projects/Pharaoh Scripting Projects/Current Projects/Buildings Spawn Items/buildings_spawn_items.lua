@@ -102,7 +102,7 @@ Palace of Pleasures: phar_main_rare_6 (Babylonian Healer - Encamp Replenishment 
 Pottery Markets: phar_main_rare_37 (Minoan Pottery: -10% to Upkeep of Native Units, -10% to Cost of All Outposts in Province).
      * Variant: phar_main_all_landmark_production_boost_tarsus_1
 
-! Royal Bronze Worker / Bronzeworker: phar_main_common_armour_heavy, phar_main_common_armour_light, phar_main_common_armour_medium
+! Royal Bronze Worker / Royal Bronzeworker: phar_main_common_armour_heavy, phar_main_common_armour_light, phar_main_common_armour_medium
      * Variants: phar_main_all_resource_production_modifier_bronze_3, phar_main_tausret_resource_production_modifier_bronze_3
 
 Royal Goldsmith: phar_main_rare_24 (Golden Scarab: -10% to Gold Recruitment and Upkeep Cost), phar_main_rare_28 (Ritual Ankh: -10% to Recruitment and Upkeep for Native Units).

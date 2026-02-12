@@ -438,8 +438,8 @@ modular_difficulty_campaign.config = {
 
      royal_decrees_research_rate = {
           bundle_key = "phar_main_modular_difficulty_royal_decrees_research_rate",
-          low = -25, -- a value of -50 will double research time (low research rate)
-          high = 125, -- a value of 150 will reduce research time by half (high research rate)
+          low = -15, -- a value of -50 will double research time (low research rate)
+          high = 115, -- a value of 150 will reduce research time by half (high research rate)
      },
 
      recruitment_capacity_player = {
@@ -474,9 +474,9 @@ modular_difficulty_campaign.config = {
           bundle_key = "phar_main_effect_bundle_modular_difficulty_resource_availability",
           effect_key = "troy_effect_economy_add_deposit_stone", -- Pharaoh has only stone deposits in provinces - 22/12/2022
           effect_scope = "faction_to_province_own",
-          low = -5000,                                  -- flat amount to add to a province's current mineral deposits
-          medium = 5000,                                -- flat amount to add to a province's current mineral deposits
-          high = 10000,                                 -- flat amount to add to a province's current mineral deposits
+          low = -3500,                                  -- flat amount to add to a province's current mineral deposits
+          medium = 3500,                                -- flat amount to add to a province's current mineral deposits
+          high = 5000,                                 -- flat amount to add to a province's current mineral deposits
      },
 
      rebellion_threshold = { -- aka repression_threshold
@@ -2713,27 +2713,27 @@ modular_difficulty_campaign.settings = {
                cm:set_script_state("terrain_mod_modular_difficulty", value)
           end
      },
-     ["immortal_faction_leaders"] = {
-          achievement_key = "",
-          is_locked = false,
-          was_previously_locked = true,
-          ui = {
-               category = modular_difficulty_campaign.ui_panel.settings_category_tabs.campaign,
-               component_type = modular_difficulty_campaign.ui_panel.settings_component_types.checkbox,
-               campaign_changeable = false,
-               ui_order = 54,
-          },
-          default_value = 0,
-          callback = function()
-               local state_value = mdm.state["immortal_faction_leaders"].value == 1
+	["immortal_faction_leaders"] = {
+		achievement_key = "",
+		is_locked = false,
+		was_previously_locked = true,
+		ui = {
+			category = modular_difficulty_campaign.ui_panel.settings_category_tabs.campaign,
+			component_type = modular_difficulty_campaign.ui_panel.settings_component_types.checkbox,
+			campaign_changeable = false,
+			ui_order = 54,
+		},
+		default_value = 0,
+		callback = function()
+			local state_value = mdm.state["immortal_faction_leaders"].value == 1
 
-               if state_value then
-                    return -- if immortal faction leaders are set then the immortality aspect is handled by DB setup
-               end
+			if state_value then
+				return	-- if immortal faction leaders are set then the immortality aspect is handled by DB setup
+			end
 
-               modular_difficulty_campaign.utility_functions.make_faction_leaders_mortal()
-          end
-     },
+			modular_difficulty_campaign.utility_functions.make_faction_leaders_mortal()
+		end
+	},
      ["any_ancient_legacy"] = {
           achievement_key = "",
           is_locked = false,

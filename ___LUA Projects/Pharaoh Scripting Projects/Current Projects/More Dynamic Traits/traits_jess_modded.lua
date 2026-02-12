@@ -2218,8 +2218,8 @@ core:add_listener(
                     hcp_main_give_trait(character, "phar_main_trait_content", 20, 30);
                     -- RECRUITING
                elseif stance == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MUSTER" then
-                    hcp_main_give_trait(character, "hcp_trait_charismatic", 20, 12.5);
-                    hcp_main_give_trait(character, "hcp_trait_military_admin_good", 20, 12.5);
+                    hcp_main_give_trait(character, "hcp_trait_charismatic", 20, 15);
+                    hcp_main_give_trait(character, "hcp_trait_military_admin_good", 20, 17.5);
                end
           end
 

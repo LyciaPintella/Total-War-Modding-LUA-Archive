@@ -2353,13 +2353,13 @@ core:add_listener(
 
           if character:age() < 30 then
                hcp_main_give_trait(character, "hcp_trait_energetic", 20, 2)
-               hcp_main_give_trait(character, "hcp_trait_fertile", 20, 2)
+               hcp_main_give_trait(character, "hcp_trait_fertile", 20, 3)
                out("HCP_CHARACTER_" .. character:onscreen_name() .. "_is_young")
           elseif character:age() > 50 then
-               hcp_main_give_trait(character, "hcp_trait_slothful", 20, 2)
-               hcp_main_give_trait(character, "hcp_trait_mad", 20, 2)
-               hcp_main_give_trait(character, "hcp_trait_infertile", 20, 2)
-               hcp_main_give_trait(character, "hcp_trait_blind", 20, 2)
+               hcp_main_give_trait(character, "hcp_trait_slothful", 20, 3)
+               hcp_main_give_trait(character, "hcp_trait_mad", 20, 3)
+               hcp_main_give_trait(character, "hcp_trait_infertile", 20, 3)
+               hcp_main_give_trait(character, "hcp_trait_blind", 20, 3)
                out("HCP_CHARACTER_" .. character:onscreen_name() .. "_is_old")
           end
 
@@ -2369,7 +2369,7 @@ core:add_listener(
           ----------------------------------
           for i = 1, #SELF_PERPETUATING_TRAITS do
                if character:has_trait(SELF_PERPETUATING_TRAITS[i]) then
-                    hcp_main_give_trait(character, SELF_PERPETUATING_TRAITS[i], 20, 2)
+                    hcp_main_give_trait(character, SELF_PERPETUATING_TRAITS[i], 20, 3)
                     out("HCP_CHARACTER_" ..
                          character:onscreen_name() .. " HAS SELF PERPETUATING TRAIT: " .. SELF_PERPETUATING_TRAITS[i])
                end

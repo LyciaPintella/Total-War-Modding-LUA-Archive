@@ -81,8 +81,38 @@ Grand Temple of Zeus - (phar_map_religion_cult_center_grand_temple_zeus_1): Smal
 ! Bazaar of the Arts: phar_main_common_general_12 (+2 Happiness), phar_main_rare_19 (+2 Happiness, +5% Replenishment in Encamp Stance), phar_main_rare_31 (-5% Attrition, +4 Workforce), phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, +10% Unit Experience), phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General).
      * Variant: phar_main_all_province_management_happiness_type_c_3
 
+! Cedar Warehouse: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
+     * Variants: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1, phar_map_wood_production_aegean_derivative_1, phar_map_wood_production_thrace_derivative_1, phar_map_wood_production_assuwa_derivative_1
+
+! Grand Bazaar: phar_main_common_general_20, Avid Collector (phar_main_rare_10), Gem Merchant (phar_main_rare_13).
+	* Variants: phar_main_all_resource_production_fruit_oasis_derivative_type_a_1, phar_main_irsu_resource_production_fruit_oasis_derivative_type_a_1
+
+! House of Astrologers: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
+     * Variants: phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
+
+! Royal Bronze Worker / Royal Bronzeworker: phar_main_common_armour_heavy, phar_main_common_armour_light, phar_main_common_armour_medium
+	* Variants: phar_main_all_resource_production_modifier_bronze_3, phar_main_tausret_resource_production_modifier_bronze_3
+
+! Visitor's Quarters - (phar_main_all_province_management_roads_3): phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: 10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
+
 ! Visitor's Quarters, Damokoros' Road Infrastructure: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
-     * Variants: phar_main_all_province_management_roads_3, phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
+	* Variants: phar_main_all_province_management_roads_3, phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
+
+! Woodcutter's District / Lumber Mill Complex: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
+	* Variants: phar_main_all_resource_production_wood_canaan_type_a_derivative_1, phar_main_all_resource_production_wood_hatti_derivative_2
+
+? These are all workforce cost reduction items for construction
+! Royal Jeweller: phar_main_rare_30 (Nubian Jewelry: phar_main_rare_30 (Nubian Jewelry: -1 to idle workforce cost of municipal complex buildings, General aura size), phar_main_rare_43 (ranged upkeep reduction), phar_main_rare_49 (workforce cost reduction for resource production buildings.).
+	* Variants: phar_main_irsu_resource_production_gold_mine_derivative_type_b_1, phar_main_all_resource_production_gold_mine_derivative_type_b_1
+
+! Smugglers' Market: phar_main_common_general_2 (5% rare ancillary chance), phar_main_common_general_8 (5% ancillary steal), Smuggler (phar_main_rare_12 - 35% LOS 5% ancillary steal), Saboteur (phar_main_rare_14 - Reduces enemy army movement in region), Poisoner (phar_main_rare_9 - reduces enemy army movement + bodyguard lethality.).
+	* Variant: phar_main_all_resource_production_port_coast_derivative_type_a_1
+
+! Stone Carvers' District: Avid Collector (phar_main_rare_10), phar_main_rare_32 (Mining Hammer:  -1 Siege Holdout Time, -10% Bronze Upkeep Cost), phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General), phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, +10% Unit Experience).
+	* Variants: phar_main_all_resource_production_stone_mine_derivative_type_a_1, phar_main_irsu_resource_production_stone_mine_derivative_type_a_1
+
+Surgeon's Practice: phar_main_rare_2: +5 Rel with Kemet factions, 5% Cmp Replen. phar_main_rare_6: +5 Relationship with Babylonian factions, 5% Cmp Replen. phar_sea_rare_8: -40% Bodyguard Fatigue Buildup, phar_main_common_general_10: -20% General Fatigue Buildup,
+	* Variant: phar_main_all_province_management_growth_type_a_3
 
 Oxen Cart Assembly:  phar_sea_rare_9, phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: 10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
      * Variant: phar_sea_peleset_province_management_movement_production_boost_3
@@ -90,20 +120,11 @@ Oxen Cart Assembly:  phar_sea_rare_9, phar_main_common_general_22 (Scout: +35% L
 Granary, Provisioning Headquarters: phar_main_common_general_29 (Mining Hammer: -1 Enemy Siege Holdout Time, -10% Bronze Upkeep Cost), phar_main_common_general_22 (Scout: +35% Line of Sight).
      * Variants: phar_main_all_resource_production_modifier_food_3, phar_main_tausret_resource_production_modifier_food_3
 
-! Grand Bazaar: phar_main_common_general_20, Avid Collector (phar_main_rare_10), Gem Merchant (phar_main_rare_13).
-     * Variants: phar_main_all_resource_production_fruit_oasis_derivative_type_a_1, phar_main_irsu_resource_production_fruit_oasis_derivative_type_a_1
-
-! House of Astrologers: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
-     * Variants: phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
-
 Palace of Pleasures: phar_main_rare_6 (Babylonian Healer - Encamp Replenishment & +3 Babylonian Relations), phar_sea_common_1 (+5 Labour Growth), phar_sea_rare_8 (40% Bodyguard Fatigue Reduction).
      * Variants: phar_main_all_province_management_growth_type_a_3, phar_map_bab_province_management_happiness_growth_type_a_3
 
 Pottery Markets: phar_main_rare_37 (Minoan Pottery: -10% to Upkeep of Native Units, -10% to Cost of All Outposts in Province).
      * Variant: phar_main_all_landmark_production_boost_tarsus_1
-
-! Royal Bronze Worker / Royal Bronzeworker: phar_main_common_armour_heavy, phar_main_common_armour_light, phar_main_common_armour_medium
-     * Variants: phar_main_all_resource_production_modifier_bronze_3, phar_main_tausret_resource_production_modifier_bronze_3
 
 Royal Goldsmith: phar_main_rare_24 (Golden Scarab: -10% to Gold Recruitment and Upkeep Cost), phar_main_rare_28 (Ritual Ankh: -10% to Recruitment and Upkeep for Native Units).
      * Variants: phar_main_all_resource_production_modifier_gold_3, phar_main_tausret_resource_production_modifier_gold_3
@@ -111,31 +132,10 @@ Royal Goldsmith: phar_main_rare_24 (Golden Scarab: -10% to Gold Recruitment and 
 Royal Fishery: phar_main_rare_27 (Dried Fish: -25% Deep Sea Attrition, -10% Army Food Upkeep), phar_main_rare_40 (Heavy Ropes: -1 Workforce Cost for Military Structures, -1 Turn to Enemy Siege Holdout Time), phar_sea_common_2 (Royal Fishery: +20% to Campaign Movement Range at Sea).
      * Variant: phar_main_all_resource_production_port_coast_2
 
-? These are all workforce cost reduction items for construction
-! Royal Jeweller: phar_main_rare_30 (Nubian Jewelry: phar_main_rare_30 (Nubian Jewelry: -1 to idle workforce cost of municipal complex buildings, General aura size), phar_main_rare_43 (ranged upkeep reduction), phar_main_rare_49 (workforce cost reduction for resource production buildings.).
-     * Variants: phar_main_irsu_resource_production_gold_mine_derivative_type_b_1, phar_main_all_resource_production_gold_mine_derivative_type_b_1
-
-! Smugglers' Market: phar_main_common_general_2 (5% rare ancillary chance), phar_main_common_general_8 (5% ancillary steal), Smuggler (phar_main_rare_12 - 35% LOS 5% ancillary steal), Saboteur (phar_main_rare_14 - Reduces enemy army movement in region), Poisoner (phar_main_rare_9 - reduces enemy army movement + bodyguard lethality.).
-     * Variant: phar_main_all_resource_production_port_coast_derivative_type_a_1
-
-! Stone Carvers' District: Avid Collector (phar_main_rare_10), phar_main_rare_32 (Mining Hammer:  -1 Siege Holdout Time, -10% Bronze Upkeep Cost), phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General), phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, +10% Unit Experience).
-     * Variants: phar_main_all_resource_production_stone_mine_derivative_type_a_1, phar_main_irsu_resource_production_stone_mine_derivative_type_a_1
-
-Surgeon's Practice: phar_main_rare_2: +5 Rel with Kemet factions, 5% Cmp Replen. phar_main_rare_6: +5 Relationship with Babylonian factions, 5% Cmp Replen. phar_sea_rare_8: -40% Bodyguard Fatigue Buildup, phar_main_common_general_10: -20% General Fatigue Buildup,
-     * Variant: phar_main_all_province_management_growth_type_a_3
-
 Translators Quarters - (phar_main_all_province_management_main_building_poc_happiness_boost_1): phar_main_common_general__25, phar_main_common_general__26, phar_main_common_general__27, Diplomat (phar_main_rare_11).
-
-! Visitor's Quarters - (phar_main_all_province_management_roads_3): phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: 10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
 
 Wisdom Codecs: Field Advisor (phar_main_common_general_16 - no effect in data.pack), Wise Nobleman (phar_main_rare_18 - +2 influence, XP for ranged infantry) Soothsayer (phar_main_rare_8 - subterfuge/governance stat).
      * Variant: phar_main_all_province_management_main_building_poc_legitimacy_influence_boost_3
-
-! Woodcutter's District / Lumber Mill Complex: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
-     * Variants: phar_main_all_resource_production_wood_canaan_type_a_derivative_1, phar_main_all_resource_production_wood_hatti_derivative_2
-
-! Cedar Warehouse: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
-     * Variants: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1, phar_map_wood_production_aegean_derivative_1, phar_map_wood_production_thrace_derivative_1, phar_map_wood_production_assuwa_derivative_1
 
 Wine Market: phar_main_common_general_12, phar_main_rare_19, phar_main_rare_31, phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General).
      * Variant: phar_main_ram_province_management_production_boost_happiness_3

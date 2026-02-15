@@ -83,6 +83,9 @@ Grand Temple of Zeus - (phar_map_religion_cult_center_grand_temple_zeus_1): Smal
 
 ! Visitor's Quarters, Damokoros' Road Infrastructure: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
      * Variants: phar_main_all_province_management_roads_3, phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
+	
+Surgeon's Practice: phar_main_rare_2: +5 Rel with Kemet factions, 5% Cmp Replen. phar_main_rare_6: +5 Relationship with Babylonian factions, 5% Cmp Replen. phar_sea_rare_8: -40% Bodyguard Fatigue Buildup, phar_main_common_general_10: -20% General Fatigue Buildup,
+	* Variant: phar_main_all_province_management_growth_type_a_3
 
 Oxen Cart Assembly:  phar_sea_rare_9, phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: 10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
      * Variant: phar_sea_peleset_province_management_movement_production_boost_3
@@ -115,14 +118,11 @@ Royal Fishery: phar_main_rare_27 (Dried Fish: -25% Deep Sea Attrition, -10% Army
 ! Royal Jeweller: phar_main_rare_30 (Nubian Jewelry: phar_main_rare_30 (Nubian Jewelry: -1 to idle workforce cost of municipal complex buildings, General aura size), phar_main_rare_43 (ranged upkeep reduction), phar_main_rare_49 (workforce cost reduction for resource production buildings.).
      * Variants: phar_main_irsu_resource_production_gold_mine_derivative_type_b_1, phar_main_all_resource_production_gold_mine_derivative_type_b_1
 
-! Smugglers' Market: phar_main_common_general_2 (5% rare ancillary chance), phar_main_common_general_8 (5% ancillary steal), Smuggler (phar_main_rare_12 - 35% LOS 5% ancillary steal), Saboteur (phar_main_rare_14 - Reduces enemy army movement in region), Poisoner (phar_main_rare_9 - reduces enemy army movement + bodyguard lethality.).
+! Smugglers' Market / Smuggler's Market / Smugglers' Port / Smuggler's Port: phar_main_common_general_2 (5% rare ancillary chance), phar_main_common_general_8 (5% ancillary steal), Smuggler (phar_main_rare_12 - 35% LOS 5% ancillary steal), Saboteur (phar_main_rare_14 - Reduces enemy army movement in region), Poisoner (phar_main_rare_9 - reduces enemy army movement + bodyguard lethality.).
      * Variant: phar_main_all_resource_production_port_coast_derivative_type_a_1
 
 ! Stone Carvers' District: Avid Collector (phar_main_rare_10), phar_main_rare_32 (Mining Hammer:  -1 Siege Holdout Time, -10% Bronze Upkeep Cost), phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General), phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, +10% Unit Experience).
      * Variants: phar_main_all_resource_production_stone_mine_derivative_type_a_1, phar_main_irsu_resource_production_stone_mine_derivative_type_a_1
-
-Surgeon's Practice: phar_main_rare_2: +5 Rel with Kemet factions, 5% Cmp Replen. phar_main_rare_6: +5 Relationship with Babylonian factions, 5% Cmp Replen. phar_sea_rare_8: -40% Bodyguard Fatigue Buildup, phar_main_common_general_10: -20% General Fatigue Buildup,
-     * Variant: phar_main_all_province_management_growth_type_a_3
 
 Translators Quarters - (phar_main_all_province_management_main_building_poc_happiness_boost_1): phar_main_common_general__25, phar_main_common_general__26, phar_main_common_general__27, Diplomat (phar_main_rare_11).
 
@@ -139,7 +139,9 @@ Wisdom Codecs: Field Advisor (phar_main_common_general_16 - no effect in data.pa
 
 Wine Market: phar_main_common_general_12, phar_main_rare_19, phar_main_rare_31, phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General).
      * Variant: phar_main_ram_province_management_production_boost_happiness_3
+
 ]] --
+
 out("anc_mod: INIT.")
 local ancillary_master_list = {
      -- ["building_id"] = {"anc1","anc2"}

@@ -1,14 +1,32 @@
 --[[
      ? This is a guide for what buildings make what items. I've kept the db tag for the buildings
      ? and items, and included their plain English names so you can know what items to expect.
-     
+	
+! Bazaar of the Arts: phar_main_common_general_12 (+2 Happiness), phar_main_rare_19 (+2 Happiness, +5% Replenishment in Encamp Stance), phar_main_rare_31 (-5% Attrition, +4 Workforce), phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, +10% Unit Experience), phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General).
+     * Variant: phar_main_all_province_management_happiness_type_c_3
+	
 ! Bronze Proving Hall: phar_main_common_equipment_axe, phar_main_common_equipment_club, phar_main_common_equipment_spear, phar_main_common_equipment_khopesh, phar_main_common_equipment_sword
-
      * Variant: phar_main_all_resource_production_bronze_mine_derivative_type_a_2
 
-! Cedar Warehouse - Small and medium sheilds, and common chariots.
+! Cedar Warehouse: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
+     * Variants: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1, phar_map_wood_production_aegean_derivative_1, phar_map_wood_production_thrace_derivative_1, phar_map_wood_production_assuwa_derivative_1
 
-     * Variant: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1
+! Grand Bazaar: phar_main_common_general_20, Avid Collector (phar_main_rare_10), Gem Merchant (phar_main_rare_13).
+	* Variants: phar_main_all_resource_production_fruit_oasis_derivative_type_a_1, phar_main_irsu_resource_production_fruit_oasis_derivative_type_a_1
+
+! House of Astrologers: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
+     * Variants: phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
+
+! Smugglers' Market / Smuggler's Market / Smugglers' Port / Smuggler's Port: phar_main_common_general_2 (5% rare ancillary chance), phar_main_common_general_8 (5% ancillary steal), Smuggler (phar_main_rare_12 - 35% LOS 5% ancillary steal), Saboteur (phar_main_rare_14 - Reduces enemy army movement in region), Poisoner (phar_main_rare_9 - reduces enemy army movement + bodyguard lethality.).
+     * Variant: phar_main_all_resource_production_port_coast_derivative_type_a_1
+
+! Royal Bronze Worker / Royal Bronzeworker: phar_main_common_armour_heavy, phar_main_common_armour_light, phar_main_common_armour_medium
+	* Variants: phar_main_all_resource_production_modifier_bronze_3, phar_main_tausret_resource_production_modifier_bronze_3
+
+! Visitor's Quarters - (phar_main_all_province_management_roads_3): phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: 10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
+
+! Visitor's Quarters, Damokoros' Road Infrastructure: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
+     * Variants: phar_main_all_province_management_roads_3, phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
 
 Champion's Hall: phar_main_common_general_11 (sucks!), phar_main_rare_15 (Duellist: +5% Ambush Defence Channce, XP for sword and khopesh units),  phar_main_rare_16 (Blind Veteran: +20% Ambush defence chance, XP for spear units), phar_main_rare_17 (Strongman - +2 Public Order, XP for axe and club units).
 
@@ -78,29 +96,6 @@ Grand Temple of Zeus - (phar_map_religion_cult_center_grand_temple_zeus_1): Smal
 ]] --
 --[[
 
-! Bazaar of the Arts: phar_main_common_general_12 (+2 Happiness), phar_main_rare_19 (+2 Happiness, +5% Replenishment in Encamp Stance), phar_main_rare_31 (-5% Attrition, +4 Workforce), phar_main_rare_42 (Senet Game Set: +2 Siege Holdout Time, +10% Unit Experience), phar_main_rare_7 (Supporter: +2 Influence, +1 Presence For General).
-     * Variant: phar_main_all_province_management_happiness_type_c_3
-
-! Cedar Warehouse: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
-     * Variants: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1, phar_map_wood_production_aegean_derivative_1, phar_map_wood_production_thrace_derivative_1, phar_map_wood_production_assuwa_derivative_1
-
-! Grand Bazaar: phar_main_common_general_20, Avid Collector (phar_main_rare_10), Gem Merchant (phar_main_rare_13).
-	* Variants: phar_main_all_resource_production_fruit_oasis_derivative_type_a_1, phar_main_irsu_resource_production_fruit_oasis_derivative_type_a_1
-
-! House of Astrologers: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
-     * Variants: phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
-
-! Smugglers' Market / Smuggler's Market / Smugglers' Port / Smuggler's Port: phar_main_common_general_2 (5% rare ancillary chance), phar_main_common_general_8 (5% ancillary steal), Smuggler (phar_main_rare_12 - 35% LOS 5% ancillary steal), Saboteur (phar_main_rare_14 - Reduces enemy army movement in region), Poisoner (phar_main_rare_9 - reduces enemy army movement + bodyguard lethality.).
-     * Variant: phar_main_all_resource_production_port_coast_derivative_type_a_1
-
-! Royal Bronze Worker / Royal Bronzeworker: phar_main_common_armour_heavy, phar_main_common_armour_light, phar_main_common_armour_medium
-	* Variants: phar_main_all_resource_production_modifier_bronze_3, phar_main_tausret_resource_production_modifier_bronze_3
-
-! Visitor's Quarters - (phar_main_all_province_management_roads_3): phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: 10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
-
-! Visitor's Quarters, Damokoros' Road Infrastructure: phar_main_common_general_22 (Scout: +35% Line of Sight), phar_main_common_general_24 (Tracker: -10% Enemy Movement in Region), phar_main_common_general_28 (Sandals: - Prayer Movement Restoration +20%), phar_main_common_general_7 (Devoted Taskmaster: +4 Influence), phar_main_common_general_9 (Trapper: -10% Enemy Movement in Region), phar_main_rare_1 (Libu Tracker: -10% Enemy Movement Range in Region & 5% Ambush Chance).
-     * Variants: phar_main_all_province_management_roads_3, phar_map_bab_province_management_influence_roads_type_a_3, phar_map_myc_province_management_roads_3
-	
 Surgeon's Practice: phar_main_rare_2: +5 Rel with Kemet factions, 5% Cmp Replen. phar_main_rare_6: +5 Relationship with Babylonian factions, 5% Cmp Replen. phar_sea_rare_8: -40% Bodyguard Fatigue Buildup, phar_main_common_general_10: -20% General Fatigue Buildup,
 	* Variant: phar_main_all_province_management_growth_type_a_3
 

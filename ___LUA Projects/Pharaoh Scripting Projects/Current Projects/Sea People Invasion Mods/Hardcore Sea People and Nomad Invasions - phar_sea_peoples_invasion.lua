@@ -1481,13 +1481,13 @@ sea_invasion = {
           local next_turn_wave = {}
 
           for _, faction in pairs(sea_invasion.persistent.invasion_instance) do
-               out.invasions("INVASION FACTION : [" .. faction.faction_key .. "]")
+               out.invasions("INVASION FACTION: " .. faction.faction_key)
                for _, wave in pairs(faction.faction_wave_instances) do
-                    out.invasions("Wave number   < " ..
+                    out.invasions("Wave number: " ..
                          wave.wave_number ..
-                         " >   will spawn on turn > " ..
+                         " will spawn on turn " ..
                          wave.final_spawn_on_turn ..
-                         "< \t at location : [" .. wave.spawn_location.x .. "/" .. wave.spawn_location.y .. "]")
+                         "< \t at location " .. wave.spawn_location.x .. "/" .. wave.spawn_location.y)
                     if wave.final_spawn_on_turn == current_turn and wave.has_spawned == false then
                          table.insert(next_turn_wave, wave)
                     end

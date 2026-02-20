@@ -565,7 +565,7 @@ phar_royal_decrees_methods = {
                true
           )
 
-
+		--Lycia Bookmark
           --listeners for phar_main_tech_civil_1_happiness_capital
 
           core:add_listener(
@@ -1348,6 +1348,7 @@ phar_royal_decrees_methods = {
           end
      end,
 
+	-- Lycia Bookmark
      --method for phar_main_tech_civil_1_happiness_capital
      apply_happiness_bonus_to_capital = function(faction)
           if not faction or type(faction) == "string" then
@@ -1364,7 +1365,7 @@ phar_royal_decrees_methods = {
 
           local effect_bundle_key = "phar_main_effect_bundle_technology_happiness_in_capital"
 
-          cm:apply_effect_bundle_to_province(effect_bundle_key, home_region:name(), 0)
+          cm:apply_custom_effect_bundle_to_faction(effect_bundle, region, turns)(effect_bundle_key, home_region:name(), 0)
      end,
 
 

@@ -8,6 +8,10 @@
 ! Bronze Proving Hall: phar_main_common_equipment_axe, phar_main_common_equipment_club, phar_main_common_equipment_spear, phar_main_common_equipment_khopesh, phar_main_common_equipment_sword
      * Variant: phar_main_all_resource_production_bronze_mine_derivative_type_a_2
 
+! Bronzeworker's District / Bronzeworkers' District: phar_main_common_shield_large, phar_main_common_shield_medium, z_bodyguard_common_equipment_two_handed_axe, z_bodyguard_common_equipment_two_handed_club, z_bodyguard_common_equipment_two_handed_spear, z_bodyguard_common_equipment_two_handed_sword
+	* Variant: phar_main_all_resource_production_bronze_mine_type_b_1
+
+
 ! Cedar Warehouse: phar_main_common_equipment_bow, phar_main_common_equipment_chariot, phar_main_common_shield_large, phar_main_common_shield_medium, phar_main_common_shield_small, phar_main_common_equipment_spear.
      * Variants: phar_map_all_resource_production_wood_mesopotamia_type_a_derivative_1, phar_map_wood_production_aegean_derivative_1, phar_map_wood_production_thrace_derivative_1, phar_map_wood_production_assuwa_derivative_1
 
@@ -143,6 +147,13 @@ local ancillary_master_list = {
         "phar_main_common_equipment_spear",
         "phar_main_common_equipment_khopesh", "phar_main_common_equipment_sword"
     },
+    
+    -- Bronzeworker's District / Bronzeworkers' District
+	["phar_main_all_resource_production_bronze_mine_type_b_1"] = {
+	"phar_main_common_shield_large", "phar_main_common_shield_medium", "z_bodyguard_common_equipment_two_handed_axe",
+	"z_bodyguard_common_equipment_two_handed_club", "z_bodyguard_common_equipment_two_handed_spear",
+	"z_bodyguard_common_equipment_two_handed_sword"
+    },
 
     -- Wisdom Codices
     ["phar_main_all_province_management_main_building_poc_legitimacy_influence_boost_3"] = {
@@ -160,8 +171,8 @@ local ancillary_master_list = {
 
     -- Healer / Palace of Pleasure Buildings
     ["phar_main_all_province_management_growth_type_a_3"] = {
-        "phar_main_rare_2", "phar_main_rare_6", "phar_sea_common_1",
-        "phar_sea_rare_8"
+        "phar_main_rare_2", "phar_main_rare_6","phar_sea_rare_8",
+	   "phar_main_rare_18", "phar_main_common_armour_medium"
     },
     ["phar_map_bab_province_management_happiness_growth_type_a_3"] = {
         "phar_main_rare_6", "phar_sea_common_1", "phar_sea_rare_8"

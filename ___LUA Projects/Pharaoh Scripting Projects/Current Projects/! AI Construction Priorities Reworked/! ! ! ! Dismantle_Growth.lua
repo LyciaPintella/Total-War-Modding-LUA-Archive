@@ -26,9 +26,9 @@ local function is_growth_building(building_name)
 	return pharaoh_growth_buildings[building_name] or false
 end
 
-local function dismantle_growth(region_key)
-     out("dismantle_growth: start error checks.")
-     out("dismantle_growth: for region " .. region_key)
+local function Dismantle_Growth(region_key)
+     out("Dismantle_Growth: start error checks.")
+     out("Dismantle_Growth: for region " .. region_key)
      local region = cm:get_region(region_key)
      if not region then
           out("Error - Region not found for key " .. region_key)
@@ -50,7 +50,7 @@ local function dismantle_growth(region_key)
      end
      out("Slot list found for region " .. region_key)
 
-     out("dismantle_growth: error checks complete.")
+     out("Dismantle_Growth: error checks complete.")
      for i = 0, slot_list:num_items() - 1 do
           local slot = slot_list:item_at(i)
           out("AI CPR slot: " .. tostring(slot) .. ", has_building: " .. tostring(slot and slot:has_building()))
@@ -62,7 +62,7 @@ local function dismantle_growth(region_key)
                if building then
                     local building_name = building:name()
                     if is_growth_building(building_name) then
-                         out("dismantle_growth:: removing building " .. building_name)
+                         out("Dismantle_Growth:: removing building " .. building_name)
                          cm:region_slot_instantly_dismantle_building(slot)
                     end
                end
@@ -105,7 +105,7 @@ local function Growth_Listener()
                                    ", owned by faction: " .. current_region:owning_faction():name())
                               if current_region:owning_faction():command_queue_index() == region_owner:command_queue_index() then
                                    out("CQI checks complete, dismantling growth in region: " .. current_region:name())
-                                   dismantle_growth(current_region:name())
+                                   Dismantle_Growth(current_region:name())
                               end
                          else
                               out("Error: current_region is nil in province:regions() iteration.")
@@ -116,5 +116,4 @@ local function Growth_Listener()
           true
      )
 end
-
 cm:add_first_tick_callback(Growth_Listener)

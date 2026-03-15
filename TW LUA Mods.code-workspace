@@ -68,6 +68,7 @@
 			"statusBar.debuggingForeground": "#FEF9F2",
 			"statusBar.noFolderBackground": "#754605",
 			"statusBar.noFolderForeground": "#FEF9F2"
-		}
+		},
+		"metalua-formatter.indentSize": 5
 	}
 }

@@ -31,5 +31,5 @@
 		"**/README.md": false,
 		"**/*sync.ffs_*": true,
 		"**/*-Jessica-PC*/**": true
-	},
+	}
 }

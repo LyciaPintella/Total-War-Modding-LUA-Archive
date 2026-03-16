@@ -56,9 +56,19 @@
 			"**/*-Jessica-PC*/**": true
 		},
 		"workbench.colorCustomizations": {
+			"[Just Black + Comments]": {},
 			"activityBar.background": "#432803",
 			"titleBar.activeBackground": "#5E3804",
-			"titleBar.activeForeground": "#FEF9F3"
-		}
+			"titleBar.activeForeground": "#FEF9F3",
+			"titleBar.inactiveBackground": "#754605",
+			"titleBar.inactiveForeground": "#FEF9F2",
+			"statusBar.background": "#754605",
+			"statusBar.foreground": "#FEF9F2",
+			"statusBar.debuggingBackground": "#754605",
+			"statusBar.debuggingForeground": "#FEF9F2",
+			"statusBar.noFolderBackground": "#754605",
+			"statusBar.noFolderForeground": "#FEF9F2"
+		},
+		"metalua-formatter.indentSize": 5
 	}
 }

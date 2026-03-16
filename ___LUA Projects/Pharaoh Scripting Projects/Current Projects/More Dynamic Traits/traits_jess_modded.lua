@@ -2393,34 +2393,3 @@ cm:add_loading_game_callback(
           end
      end
 )
-
------------------------
----- RELATIVE DIED ----
------------------------
--- core:add_listener(
---     "hcp_character_relative_killed",
---     "FactionCharacterDiedOrWounded",
---     true,
---     function(context)
---         local faction = context:faction()
---         local family_member = context:family_member()
---         local dead_family_member = family_member:character():command_queue_index()
---         out("hcp_character_family_relation_died_called_" .. dead_family_member)
---         if faction:is_human() then
---             if not family_member:is_null_interface() then
---                 if family_member:is_in_faction_leaders_family() then
---                     for i = 0, faction:character_list():num_items() - 1 do
---                         local character = faction:character_list():item_at(i)
---                         if not character:is_null_interface()
---                         and character:family_member():is_in_faction_leaders_family()
---                         and character:command_queue_index() ~= dead_family_member then
---                             hcp_main_give_trait(character, "hcp_trait_bereaved", 20, 100)
---                             out("hcp_FAMILY_MEMBER_DIED_SO_APPLYING_BEREAVED_TO_CHARACTER_" .. character:command_queue_index())
---                         end
---                     end
---                 end
---             end
---         end
---     end,
---     true
--- )

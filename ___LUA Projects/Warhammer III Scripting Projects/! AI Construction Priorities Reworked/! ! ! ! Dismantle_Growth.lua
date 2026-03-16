@@ -9,6 +9,7 @@ end
 local function dismantle_growth(region_key)
      out("dismantle_growth start error checks.")
      out("dismantle_growth for region " .. region_key)
+---@diagnostic disable-next-line: redundant-parameter
      local region = cm:get_region(region_key)
      if not region then
           out("Error - Region not found for key " .. region_key)
@@ -43,6 +44,7 @@ local function dismantle_growth(region_key)
                     local building_name = building:name()
                     if is_growth_building(building_name) then
                          out("dismantle_growth removing building " .. building_name)
+---@diagnostic disable-next-line: param-type-mismatch
                          cm:region_slot_instantly_dismantle_building(slot)
                     end
                end

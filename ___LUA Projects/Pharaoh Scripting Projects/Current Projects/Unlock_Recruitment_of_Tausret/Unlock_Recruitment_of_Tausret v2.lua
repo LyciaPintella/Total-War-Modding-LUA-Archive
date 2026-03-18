@@ -11,17 +11,17 @@ local TAUSRET_CONFIG = {
      debug_enabled = true
 }
 
-local function log_debug(message) if TAUSRET_CONFIG.debug_enabled then out("Unlock_Recruitment_of_Tausret_Mod: " .. tostring(message)) end end
+local function ModLog(message) if TAUSRET_CONFIG.debug_enabled then ModLog("Unlock_Recruitment_of_Tausret: " .. tostring(message) .. ".") end end
 
 local function Unlock_Recruitment_of_Tausret()
-    log_debug("Unlock_Recruitment_of_Tausret function called")
+    ModLog("Unlock_Recruitment_of_Tausret function called")
 		
-	log_debug("Applying unlock_starting_character_recruitment for Tausret")
+	ModLog("Applying unlock_starting_character_recruitment for Tausret")
      cm:unlock_starting_character_recruitment(TAUSRET_CONFIG.startpos_id, TAUSRET_CONFIG.faction_key)
-     log_debug("Applied unlock_starting_character_recruitment for Tausret")
+     ModLog("Applied unlock_starting_character_recruitment for Tausret")
 
      -- Approach 2: Find and stop convalescence (backup)
-     log_debug("Attempt 2: Searching for Tausret in faction and stopping convalescence...")
+     ModLog("Attempt 2: Searching for Tausret in faction and stopping convalescence...")
 
      local faction = cm:get_faction(TAUSRET_CONFIG.faction_key)
 
@@ -29,7 +29,7 @@ local function Unlock_Recruitment_of_Tausret()
           local character_list = faction:character_list()
 
           if character_list and not character_list:is_empty() then
-               log_debug("Faction has " .. character_list:num_items() .. " characters")
+               ModLog("Faction has " .. character_list:num_items() .. " characters")
 
                for i = 0, character_list:num_items() - 1 do
                     local character = character_list:item_at(i)
@@ -38,32 +38,32 @@ local function Unlock_Recruitment_of_Tausret()
                          local agent_subtype = character:character_subtype_key()
                          local cqi = character:command_queue_index()
 
-                         log_debug("  Found character: subtype=" .. agent_subtype .. ", cqi=" .. cqi)
+                         ModLog("  Found character: subtype=" .. agent_subtype .. ", cqi=" .. cqi)
 
                          -- Check if this is Tausret
                          if agent_subtype == TAUSRET_CONFIG.agent_subtype then
-                              log_debug("  ★ THIS IS TAUSRET! CQI: " .. cqi)
+                              ModLog("  ★ THIS IS TAUSRET! CQI: " .. cqi)
 
                               -- Stop her convalescence
                               cm:stop_character_convalescing(cqi)
-                              log_debug("  ✓ Stopped convalescence for Tausret")
+                              ModLog("  ✓ Stopped convalescence for Tausret")
 
                               -- Make sure she's set as unique
                               local char_str = cm:char_lookup_str(character)
                               cm:set_character_unique(char_str, true)
-                              log_debug("  ✓ Set Tausret as unique")
+                              ModLog("  ✓ Set Tausret as unique")
                          end
                     end
                end
           else
-               log_debug("WARNING: Faction character list is empty")
+               ModLog("WARNING: Faction character list is empty")
           end
      else
-          log_debug("ERROR: Could not get faction interface")
+          ModLog("ERROR: Could not get faction interface")
      end
 
-     log_debug("===== TAUSRET UNLOCK COMPLETE =====")
-     log_debug("If successful, Tausret should now appear in recruitment pool")
+     ModLog("===== TAUSRET UNLOCK COMPLETE =====")
+     ModLog("If successful, Tausret should now appear in recruitment pool")
 end
 cm:add_first_tick_callback(function() Unlock_Recruitment_of_Tausret() end)
 
@@ -71,9 +71,9 @@ cm:add_first_tick_callback(function() Unlock_Recruitment_of_Tausret() end)
 core:add_listener("Tausret_Unlock_Final_PeriodicCheck", "FactionTurnStart", function(context)
      local turn = cm:model():turn_number()
      -- Check every 3 turns for player's faction
-     return turn % 3 == 0 and context:faction():name() == "amenmesse"
+     return turn % 3 == 0 and context:faction():name() == "Amenmesse"
 end, function(context)
-     log_debug("Periodic check at turn " .. cm:model():turn_number())
+     ModLog("Periodic check at turn " .. cm:model():turn_number())
 
      -- Re-apply unlock as safety net
      cm:unlock_starting_character_recruitment(TAUSRET_CONFIG.startpos_id, TAUSRET_CONFIG.faction_key)
@@ -94,4 +94,4 @@ end, function(context)
           end
      end
 end, true)
-log_debug("===== Unlock_Recruitment_of_Tausret MOD LOADED =====")
+ModLog("===== Unlock_Recruitment_of_Tausret MOD LOADED =====")

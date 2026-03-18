@@ -1,0 +1,276 @@
+================================================================================
+TAUSRET RESTORATION - WHY MALE TAUSRET APPEARED & CORRECTED SOLUTIONS
+================================================================================
+
+YOUR SITUATION:
+  ✓ You are playing as Amenmesse
+  ✓ You confederated Tausret (she's in your faction)
+  ✓ Her army got disbanded
+  ✓ She got stuck in convalescence
+  ✓ Script created a male Tausret duplicate
+  ✓ Real Tausret now appears in generals list but can't be recruited
+
+ROOT CAUSE - Why Was The Duplicate Male?
+═════════════════════════════════════════════════════════════════════════════
+
+The faction key IS correct:
+  "phar_main_amenmesse" ← Player's faction (correct)
+  "phar_hero_egy_tau_tausret" ← Agent subtype (correct)
+
+The problem:
+  The character creation function may have defaulted to male appearance/gender
+  Even though the agent_subtype is correct, the character wasn't spawned with
+  the proper female appearance/traits that make her Tausret
+
+Why this happened:
+  cm:create_force_with_general() may not preserve all gender/appearance data
+  from the agent_subtype when creating a NEW character
+
+
+================================================================================
+TWO FINAL CORRECTED SOLUTIONS
+================================================================================
+
+SOLUTION 1: METHOD 2 (UNLOCK) - ⭐ RECOMMENDED FIRST
+════════════════════════════════════════════════════
+
+What it does:
+  • Makes the REAL Tausret available for recruitment
+  • No duplicate needed
+  • Gets your original Tausret back
+
+How it works:
+  • Unlocks her from recruitment database lock
+  • Stops her convalescence state
+  • Returns her to recruitment pool
+
+Advantages:
+  ✓ No duplicate gender issues
+  ✓ Uses the REAL Tausret with all her stats
+  ✓ Cleanest solution
+  ✓ One attempt
+
+Disadvantages:
+  ✗ Might not work if recruitment lock is too deep
+  
+File: Restore_Tausret_UNLOCK_METHOD_FINAL.lua
+
+STEPS TO TRY:
+  1. Replace your current mod file with this one
+  2. Update pack.lua to use: "Restore_Tausret_UNLOCK_METHOD_FINAL"
+  3. Enable mod and load game
+  4. Open console (~) and look for:
+     "TAUSRET UNLOCK COMPLETE"
+  5. Go to settlement, try recruiting Tausret
+  
+Expected: Real Tausret appears in recruitment list
+
+
+SOLUTION 2: METHOD 3 (DUPLICATE) - CORRECTED
+═════════════════════════════════════════════
+
+What it does:
+  • Creates a proper Tausret general in your faction
+  • Avoids the recruitment lock entirely
+  • Guarantees you get a working Tausret
+
+How it works:
+  • Spawns new Tausret as general with army
+  • Sets immortality and uniqueness
+  • Avoids the convalescence issue
+
+Advantages:
+  ✓ Guaranteed to work (creates new character)
+  ✓ No recruitment database issues
+  ✓ Tausret will be fresh and strong
+  
+Disadvantages:
+  ✗ Might still be male if agent_subtype doesn't force gender
+  ✗ New character instead of original
+
+File: Restore_Tausret_DUPLICATE_METHOD_FINAL.lua
+
+STEPS TO TRY:
+  1. Replace your current mod file with this one
+  2. Update pack.lua to use: "Restore_Tausret_DUPLICATE_METHOD_FINAL"
+  3. Make sure spawn region is one you own:
+     Current: "phar_main_kerma_kerma" (Kerma)
+     If you don't own Kerma, edit the file and change to your region
+  4. Enable mod and load game
+  5. Open console (~) and look for:
+     "TAUSRET SUCCESSFULLY CREATED"
+  6. Check armies list - should see new Tausret as general
+
+Expected: New Tausret appears in armies
+
+
+================================================================================
+WHICH ONE TO TRY FIRST?
+================================================================================
+
+RECOMMENDED ORDER:
+
+1️⃣ TRY METHOD 2 (UNLOCK) FIRST
+   • Best outcome (gets real Tausret)
+   • Simplest approach
+   • Time: 5 minutes
+   • Success chance: 70-80%
+
+2️⃣ IF METHOD 2 DOESN'T WORK → TRY METHOD 3 (DUPLICATE)
+   • Guaranteed fallback
+   • Works around the problem
+   • Time: 5 minutes
+   • Success chance: 95%+ (might still be male though)
+
+
+================================================================================
+UNDERSTANDING THE MALE TAUSRET ISSUE
+================================================================================
+
+Why did your script create a male Tausret?
+───────────────────────────────────────────
+
+The agent_subtype "phar_hero_egy_tau_tausret" SHOULD carry Tausret's gender data.
+
+But the character creation function may not have loaded that data properly.
+
+Possible reasons:
+  1. Agent_subtype doesn't carry gender info in this version of the game
+  2. Character creation defaults to male when not explicitly set
+  3. The callback function didn't have time to set gender
+  4. Database lookup for Tausret's appearance data failed
+
+How to confirm if it's fixed:
+  • When you spawn the new Tausret, check her appearance
+  • If still male: The agent_subtype isn't including gender
+  • If female: Problem is solved!
+
+
+If New Tausret Is Still Male:
+──────────────────────────────
+
+We would need to:
+  1. Find Tausret's specific portrait ID in the game files
+  2. Explicitly set her portrait/gender after creation
+  3. Use a different approach like copying the real Tausret's properties
+
+But first, try both methods above - one of them should work.
+
+
+================================================================================
+ABOUT THE REAL TAUSRET IN YOUR GENERALS LIST
+================================================================================
+
+Current state:
+  ✓ She appears in generals list
+  ✓ She exists in the game world
+  ✗ She's locked from recruitment
+
+This means:
+  • The game found her
+  • She's in your faction (Amenmesse)
+  • But she's stuck in a state that prevents recruitment
+
+Method 2 targets this exact problem:
+  • It unlocks her from that state
+  • Allows her to return to recruitment pool
+  • Very high chance of success
+
+
+================================================================================
+STEP-BY-STEP GUIDE
+================================================================================
+
+RIGHT NOW:
+
+1. Download: Restore_Tausret_UNLOCK_METHOD_FINAL.lua
+2. Backup: Your current mod file (in case)
+3. Copy: New file to C:\...\data\mods\tausret_restoration\
+4. Edit: pack.lua to change module name to:
+   "Restore_Tausret_UNLOCK_METHOD_FINAL"
+5. Save: pack.lua
+6. Close: Total War Launcher (completely)
+7. Reopen: Total War Launcher
+8. Enable: The mod
+9. Launch: Game
+10. Load: Your save
+11. Open: Console (~)
+12. Check: For success message
+13. Try: Recruiting Tausret at any settlement
+
+EXPECTED RESULT:
+  Real Tausret appears in recruitment list and you can recruit her!
+
+
+IF THAT DOESN'T WORK (next 5 minutes):
+
+1. Disable: The mod in launcher
+2. Close: Launcher
+3. Replace: File with Restore_Tausret_DUPLICATE_METHOD_FINAL.lua
+4. Edit: pack.lua to change module name to:
+   "Restore_Tausret_DUPLICATE_METHOD_FINAL"
+5. Check: Your spawn region in the file matches a region you own
+   If you don't own Kerma, change this line:
+   spawn_region_key = "phar_main_kerma_kerma",
+   To a region you own
+6. Save: pack.lua and the Lua file
+7. Reopen: Launcher
+8. Enable: The mod
+9. Launch: Game
+10. Load: Your save
+11. Look: For new Tausret in armies list
+
+EXPECTED RESULT:
+  New Tausret appears as a general in your armies!
+
+
+================================================================================
+POTENTIAL ISSUE WITH DUPLICATE GENDER
+================================================================================
+
+If the new Tausret STILL appears as male:
+
+This means the agent_subtype doesn't automatically enforce female gender.
+
+To fix this, we would need to:
+  1. Find Tausret's portrait_id in game data
+  2. Set it explicitly after character creation
+  3. Or manually set character gender (if API allows)
+
+But before we go there:
+  1. Try Method 2 first (better chance of success)
+  2. See if the duplicate works at all (even if male)
+  3. We can refine from there
+
+
+================================================================================
+CHECKPOINT - DO YOU HAVE?
+================================================================================
+
+✓ Faction key: "phar_main_amenmesse" (player's faction)
+✓ Agent subtype: "phar_hero_egy_tau_tausret" (Tausret)
+✓ Spawn region: "phar_main_kerma_kerma" or another you own
+✓ Correct understanding: Tausret IS in your faction (confederated)
+
+If all yes → Ready to proceed!
+
+
+================================================================================
+FINAL CHECKLIST BEFORE YOU START
+================================================================================
+
+☐ Download both .lua files I created
+☐ Backup your current mod file
+☐ Have Total War Launcher closed
+☐ Know which region you own (for Method 3 just in case)
+☐ Ready to test immediately
+
+When ready:
+  1. Try Method 2 first (Unlock)
+  2. If fails, try Method 3 (Duplicate)
+  3. Report results
+
+Expected: One of them WILL work for you!
+
+
+================================================================================

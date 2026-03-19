@@ -22,12 +22,20 @@
 			"editor.detectIndentation": false,
 			"editor.defaultFormatter": "Koihik.vscode-lua-format"
 		},
+		/*
 		"Lua.workspace.library": [
-			"../Total War LUA Autogen/output/wh3/",
 			"../Total War LUA Autogen/output/wh3/battle/",
 			"../Total War LUA Autogen/output/wh3/campaign/",
 			"../Total War LUA Autogen/output/wh3/frontend/",
 			"../Total War LUA Autogen/output/wh3/global/",
+			"${3rd}/lfs/library"
+		],
+		*/
+		"Lua.workspace.library": [
+			"../TW Lua Autogen - Warhammer III/battle/",
+			"../TW Lua Autogen - Warhammer III/campaign/",
+			"../TW Lua Autogen - Warhammer III/frontend/",
+			"../TW Lua Autogen - Warhammer III/global/",
 			"${3rd}/lfs/library"
 		],
 		"Lua.workspace.ignoreDir": [

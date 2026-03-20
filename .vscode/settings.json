@@ -24,6 +24,7 @@
 		"**/desktop.ini": true,
 		"**/README.md": false,
 		"**/*sync.ffs_*": true,
-		"**/*-Jessica-PC*/**": true
+		"**/*-Jessica-PC*/**": true,
+		"scrap.lua": true,
 	}
 }

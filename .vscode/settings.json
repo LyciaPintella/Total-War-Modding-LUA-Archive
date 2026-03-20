@@ -15,7 +15,8 @@
 		"**/*[Bb]ackup*/**",
 		"**/*[Ss]crap*/**",
 		"**/*[Ee]xample*/**",
-		"**/*Vanilla*/**"
+		"**/*Vanilla*/**",
+		"**/*Autogen*/**",
 	],
 	"files.exclude": {
 		"**/.gitignore": false,

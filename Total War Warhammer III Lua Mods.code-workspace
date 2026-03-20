@@ -1,8 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "Total War Lua Mods",
+			"name": "Total War Warhammer III Lua Mods",
 			"path": "."
+		},
+		{
+			"name": "Vanilla Lua Scripts",
+			"path": "../../Vanilla Lua Scripts/TW Warhammer III"
 		}
 	],
 	"settings": {
@@ -22,20 +26,11 @@
 			"editor.detectIndentation": false,
 			"editor.defaultFormatter": "Koihik.vscode-lua-format"
 		},
-		/*
 		"Lua.workspace.library": [
-			"../Total War LUA Autogen/output/wh3/battle/",
-			"../Total War LUA Autogen/output/wh3/campaign/",
-			"../Total War LUA Autogen/output/wh3/frontend/",
-			"../Total War LUA Autogen/output/wh3/global/",
-			"${3rd}/lfs/library"
-		],
-		*/
-		"Lua.workspace.library": [
-			"../TW Lua Autogen - Warhammer III/battle/",
-			"../TW Lua Autogen - Warhammer III/campaign/",
-			"../TW Lua Autogen - Warhammer III/frontend/",
-			"../TW Lua Autogen - Warhammer III/global/",
+			"../../TW Lua Autogen - Warhammer III/battle/",
+			"../../TW Lua Autogen - Warhammer III/campaign/",
+			"../../TW Lua Autogen - Warhammer III/frontend/",
+			"../../TW Lua Autogen - Warhammer III/global/",
 			"${3rd}/lfs/library"
 		],
 		"Lua.workspace.ignoreDir": [
@@ -66,17 +61,17 @@
 		},
 		"workbench.colorCustomizations": {
 			"[Just Black + Comments]": {},
-			"activityBar.background": "#9B4207",
-			"titleBar.activeBackground": "#D95D0A",
-			"titleBar.activeForeground": "#FFF8F4",
-			"titleBar.inactiveBackground": "#9B4207",
-			"titleBar.inactiveForeground": "#FFF8F4",
-			"statusBar.background": "#9B4207",
-			"statusBar.foreground": "#FFF8F4",
-			"statusBar.debuggingBackground": "#9B4207",
-			"statusBar.debuggingForeground": "#FFF8F4",
-			"statusBar.noFolderBackground": "#9B4207",
-			"statusBar.noFolderForeground": "#FFF8F4"
+			"activityBar.background": "#092D5A",
+			"titleBar.activeBackground": "#0D3F7E",
+			"titleBar.activeForeground": "#F7FAFE",
+			"titleBar.inactiveBackground": "#092D5A",
+			"titleBar.inactiveForeground": "#F7FAFE",
+			"statusBar.background": "#092D5A",
+			"statusBar.foreground": "#F7FAFE",
+			"statusBar.debuggingBackground": "#092D5A",
+			"statusBar.debuggingForeground": "#F7FAFE",
+			"statusBar.noFolderBackground": "#092D5A",
+			"statusBar.noFolderForeground": "#F7FAFE"
 		},
 		"metalua-formatter.indentSize": 5
 	}

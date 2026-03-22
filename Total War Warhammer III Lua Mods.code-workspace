@@ -59,7 +59,7 @@
 			"**/*sync.ffs_*": true,
 			"**/*-Jessica-PC*/**": true
 		},
-		"workbench.colorCustomizations": {
+		/*"workbench.colorCustomizations": {
 			"[Just Black + Comments]": {},
 			"activityBar.background": "#092D5A",
 			"titleBar.activeBackground": "#0D3F7E",
@@ -72,7 +72,7 @@
 			"statusBar.debuggingForeground": "#F7FAFE",
 			"statusBar.noFolderBackground": "#092D5A",
 			"statusBar.noFolderForeground": "#F7FAFE"
-		},
+		},*/
 		"metalua-formatter.indentSize": 5
 	}
 }
